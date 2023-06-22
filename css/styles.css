@@ -27,6 +27,8 @@ h1,h2,h3,h4,h5,h6,p,ul {
 }   
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .list {
@@ -61,8 +63,6 @@ img {
 
 .header {
     font-style: normal;
-    padding-top: 24px;
-    padding-bottom: 24px;
     border-bottom: 1px solid var(--border-white-cl);
 }
 .header-container {
@@ -175,6 +175,8 @@ img {
     height: 56px;
     border: none;
     border-radius: 4px;
+    padding: 16px 32px;
+    align-items: center;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -187,8 +189,6 @@ img {
 .benefits {
     font-style: normal;
     letter-spacing: 0.02em;
-    margin-left: 156px;
-    margin-right: 156px;
     padding: 120px 0
 }
 
@@ -223,8 +223,6 @@ img {
 
 .tech {
     padding-bottom: 120px;
-    margin-left: 156px;
-    margin-right: 156px;
 }
 
 .tech-title {
@@ -259,8 +257,6 @@ img {
     font-style: normal;
     background-color: var(--simple-white-cl);
     padding: 120px 0;
-    margin-left: 156px;
-    margin-right: 156px;
 
 }
 
@@ -381,6 +377,7 @@ img {
     cursor: pointer;
     padding: 12px 24px;
     border: 1px solid var(--border-white-cl);
+    border-radius: 4px;
 }
 .search-btn:hover,
 .search-btn:focus {
