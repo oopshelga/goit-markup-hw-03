@@ -6,6 +6,7 @@
     --dark-title-cl: #2E2F42;
     --dark-blue-bgd: #404bbf;
     --simple-white-cl: #F4F4FD;
+    --border-white-cl: #e7e9fc;
   
 }
 
@@ -24,6 +25,9 @@ body {
 h1,h2,h3,h4,h5,h6,p,ul {
     margin: 0;
 }   
+img {
+    display: block;
+}
 
 .list {
     list-style: none;
@@ -59,7 +63,7 @@ h1,h2,h3,h4,h5,h6,p,ul {
     font-style: normal;
     padding-top: 24px;
     padding-bottom: 24px;
-    border-bottom: 1px solid #e7e9fc;
+    border-bottom: 1px solid var(--border-white-cl);
 }
 .header-container {
     display: flex;
@@ -101,6 +105,7 @@ h1,h2,h3,h4,h5,h6,p,ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--dark-title-cl);
+    padding: 24px 0;
 }
 
 .header-link:hover,
@@ -152,6 +157,7 @@ h1,h2,h3,h4,h5,h6,p,ul {
     display: block;
     margin: 0 auto;
     margin-bottom: 48px;
+    max-width: 496px;
 }
 
 .hero-btn {
@@ -165,6 +171,10 @@ h1,h2,h3,h4,h5,h6,p,ul {
     cursor: pointer;
     display: block;
     margin: 0 auto;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -177,21 +187,18 @@ h1,h2,h3,h4,h5,h6,p,ul {
 .benefits {
     font-style: normal;
     letter-spacing: 0.02em;
-    padding-top: 120px;
-    padding-bottom: 60px;
     margin-left: 156px;
     margin-right: 156px;
+    padding: 120px 0
 }
 
 .benefits-list {
     display: flex;
     justify-content: space-around;
+    gap: 24px;
 }
 
 .benefits-item {
-    width: 264px;
-
-
 }
 
 .benefits-title {
@@ -200,6 +207,7 @@ h1,h2,h3,h4,h5,h6,p,ul {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--dark-title-cl);
+    margin-bottom: 8px;
 }
 
 .benefits-text {
@@ -213,8 +221,7 @@ h1,h2,h3,h4,h5,h6,p,ul {
 .section {}
 
 .tech {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 120px;
     margin-left: 156px;
     margin-right: 156px;
 }
@@ -248,16 +255,15 @@ h1,h2,h3,h4,h5,h6,p,ul {
 .section {}
 
 .team {
+    font-style: normal;
     background-color: var(--simple-white-cl);
-    padding-top: 60px;
-    padding-bottom: 120px;
+    padding: 120px 0;
     margin-left: 156px;
     margin-right: 156px;
 
 }
 
 .team-title {
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -274,7 +280,8 @@ h1,h2,h3,h4,h5,h6,p,ul {
 }
 
 .team-item {
-    background-color: var(--main-white-bgd)
+    background-color: var(--main-white-bgd);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-img {
@@ -282,7 +289,6 @@ h1,h2,h3,h4,h5,h6,p,ul {
 }
 
 .team-name {
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -290,15 +296,19 @@ h1,h2,h3,h4,h5,h6,p,ul {
     letter-spacing: 0.02em;
     color: var(--dark-title-cl);
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .team-text {
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
+    text-align: center;
+}
+.card-name {
+    padding: 32px 16px;
 }
 
 /* Footer section */
@@ -317,6 +327,8 @@ h1,h2,h3,h4,h5,h6,p,ul {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--bright-blue-cl);
+    display: inline-block;
+    margin-bottom: 16px;
 
 }
 
@@ -331,22 +343,26 @@ h1,h2,h3,h4,h5,h6,p,ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--simple-white-cl);
-    margin-top: 16px;
+    max-width: 264px;
 }
 /* App search */
 
 .app {
+    padding-top: 96px;
     padding-bottom: 120px;
 }
 
-.search {}
+.search {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
 
 .searcch-list {
    display: flex;
    align-items: center;
    justify-content: center;
-   row-gap: 48px;
-   column-gap: 24px;
+   gap: 24px;
+   margin-bottom: 72px;
    
 }
 
@@ -362,25 +378,33 @@ h1,h2,h3,h4,h5,h6,p,ul {
     color: var(--bright-blue-cl);
     background-color: var(--simple-white-cl);
     cursor: pointer;
+    padding: 12px 24px;
+    border: 1px solid var(--border-white-cl);
 }
 .search-btn:hover,
 .search-btn:focus {
     color: var(--main-white-bgd);
     background-color: var(--dark-blue-bgd);
+    border: 1px solid transparent;
+    border-radius: 4px;
 }
 
 
 .app-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    row-gap: 48px;
 }
 
 .app-item {
     width: calc((100% - 48px) / 3);
 }
 
-.app-img {}
+.app-content {
+    padding: 32px 16px;
+    border: 1px solid var(--border-white-cl);
+    border-top: none;
+}
 
 .app-title {
     font-style: normal;
@@ -389,6 +413,7 @@ h1,h2,h3,h4,h5,h6,p,ul {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--dark-title-cl);
+    margin-bottom: 8px;
 }
 
 .app-text {
