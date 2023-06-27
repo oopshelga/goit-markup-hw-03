@@ -84,7 +84,6 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--bright-blue-cl);
-    
     margin-right: 76px;
 }
 
@@ -138,13 +137,13 @@ img {
 
 /* Hero styles */
 
-.section {}
 
 .hero {
     background-color: var(--dark-title-cl);
     padding-top: 188px;
     padding-bottom: 188px;
 }
+
 
 .hero-title {
     font-style: normal;
